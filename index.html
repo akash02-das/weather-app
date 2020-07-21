@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Deck</title>
+
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="./img/weather-transparent-background.png" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>
+        <i class="fas fa-quote-left"></i>
+        Climate is what we expect, Weather is what we get
+        <i class="fas fa-quote-right"></i>
+    </h1>
+
+
+    <div class="location">
+        <div class="timeAndZone">
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+            <h1 class="location-timezone">Timezone</h1>
+            <div class="time">
+                <i class="far fa-clock"></i>
+                <p class="current-time">Current Time</p>
+            </div>
+        </div>
+        <canvas class="icon" width="128" height="128"></canvas>
+    </div>
+
+    <div class="temperature">
+        <div class="degree-section">
+            <i class="fas fa-temperature-high fa-2x"></i>
+            <h2 class="temperature-degree">--</h2>
+            <span><sup>F</sup></span>
+        </div>
+
+        <div class="humidity-section">
+            <label for="humidity">Humidity: </label>
+            <h2 class="humidity"></h2>
+        </div>
+
+        <div class="wind-section">
+            <label for="wind">Wind Speed: </label>
+            <h2 class="wind"></h2>
+        </div>
+
+        <div class="temperature-description">Weather Description</div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="skycons.js"></script>
+</body>
+
+</html>

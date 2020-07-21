@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    font-family: 'Oxygen', sans-serif;
+    color: #fff;
+}
+
+.location {
+    margin-top: 40px;
+}
+
+.location-timezone {
+    font-size: 30px;
+}
+
+.location,
+.temperature {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.timeAndZone h1 {
+    display: inline;
+}
+
+.time {
+    margin-top: 10px;
+}
+
+.time p {
+    display: inline;
+}
+
+.temperature {
+    flex-direction: column;
+}
+
+.temperature-description {
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section h2 {
+    font-size: 70px;
+    margin-left: 15px;
+}
+
+.degree-section span {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.humidity-section {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.humidity-section label,
+.humidity-section h2 {
+    font-size: 20px;
+}
+
+.humidity-section h2 {
+    margin-left: 5px;
+}
+
+.wind-section {
+    display: flex;
+    align-items: center;
+}
+
+.wind-section label,
+.wind-section h2 {
+    font-size: 20px;
+}
+
+.wind-section h2 {
+    margin-left: 5px;
+}
